@@ -48,4 +48,20 @@ function render() {
             listBaru.style.color = "green";
         }
     }
+
+    listBaru.innerHTML = `
+        <div>
+        <strong>${item.teks}</strong> <br>
+        <small>${item.tanggal}</small>
+        </div>
+        <div class="btn-group">
+        <select onchange="updateStatus(${index}, this.value)">
+            <option value="todo" ${item.status === 'todo' ? 'selected' : ''}>Todo</option>
+            <option value="on-progress" ${item.status === 'on-progress' ? 'selected' : ''}>On Progress</option>
+            <option value="done" ${item.status === 'done' ? 'selected' : ''}>Done</option>
+        </select>
+        <button class="edit" onclick="persiapanEdit(${index})">Edit</button>
+        <button class="hapus" onclick="hapusTugas(${index})">Hapus</button>
+        </div>
+    `;
 };
