@@ -1,12 +1,15 @@
 let tasks=[];
+let editIndeks= -1; 
 
 const inputTugas = document.getElementById("inputTugas");
 const btnTambah = document.getElementById("btnTambah");
 const daftarTugas = document.getElementById("daftarTugas");
 const inputTanggal = document.getElementById("dateInput");
 
+// function edit tambah dan hapus
 btnTambah.addEventListener("click", function(){
-    let teksTugas = inputTugas.value;
+    const teksTugas = inputTugas.value;
+    const tanggal = inputTanggal.value;
 
     if(teksTugas === "") {
         alert("Data harus diisi!")
