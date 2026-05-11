@@ -16,6 +16,14 @@ btnTambah.addEventListener("click", function(){
         return;
     }
 
+    if(editIndeks === -1){
+        tasks.push({
+            name: teksTugas;
+            date: tanggal;
+            status: 'todo';
+        })
+    }
+
     let listBaru = document.createElement("li");
     let spanBaru = document.createElement("span");
 
