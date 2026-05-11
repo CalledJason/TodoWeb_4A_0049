@@ -47,12 +47,10 @@ function render() {
         } else {
             listBaru.style.color = "green";
         }
-    }
-
-    listBaru.innerHTML = `
+            listBaru.innerHTML = `
         <div>
-        <strong>${item.teks}</strong> <br>
-        <small>${item.tanggal}</small>
+        <strong>${item.teksTugas}</strong> <br>
+        <small>${item.tglTugas}</small>
         </div>
         <div class="btn-group">
         <select onchange="updateStatus(${index}, this.value)">
@@ -64,4 +62,17 @@ function render() {
         <button class="hapus" onclick="hapusTugas(${index})">Hapus</button>
         </div>
     `;
-};
+
+    daftarTugas.appendChild(listBaru);
+    });
+}
+
+function persiapanEdit(index) {
+    inputTugas.value = tasks[index].teksTugas;
+    inputTanggal.value = tasks[index].tglTugas;
+    
+    editIndex = index; 
+    btnTambah.innerText = "Simpan"; 
+    btnTambah.style.background = "#f59e0b";
+    inputTugas.focus();
+}
