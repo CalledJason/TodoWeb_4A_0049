@@ -21,7 +21,13 @@ btnTambah.addEventListener("click", function(){
             name: teksTugas;
             date: tanggal;
             status: 'todo';
-        })
+        });
+    }else{
+        tasks[editIndeks].name = teksTugas;
+        tasks[editIndeks].name = tanggal;
+        editIndeks = -1;
+        btnTambah.innerText = "Tambah Tugas";
+        btnTambah.style.background = "#ff4b2b";
     }
 
     let listBaru = document.createElement("li");
