@@ -11,7 +11,7 @@ btnTambah.addEventListener("click", function(){
     const teksTugas = inputTugas.value;
     const tanggal = inputTanggal.value;
 
-    if(teksTugas === "") {
+    if(teksTugas === "" || tanggal === "") {
         alert("Data harus diisi!")
         return;
     }
