@@ -76,3 +76,8 @@ function persiapanEdit(index) {
     btnTambah.style.background = "#f59e0b";
     inputTugas.focus();
 }
+
+function updateStatus(index, statusBaru) {
+    tasks[index].status = statusBaru;
+    render();
+}
