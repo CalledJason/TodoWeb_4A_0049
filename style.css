@@ -36,6 +36,8 @@
         border-radius: 6px;
         display: flex;
         justify-content: space-between;
+        color: #1e293b;
+        border-left: 10px;
     }
 
     .hapus {
@@ -46,8 +48,17 @@
         background: #dc2626;
     }
 
-    li.todo { border-left: 6px solid #f59e0b; }
-    li.on-progress { border-left: 6px solid #3b82f6; }
-    li.done { border-left: 6px solid #10b981; }
+    li.todo { border-left: 10px solid #f59e0b; }
+    li.on-progress { border-left: 10px solid #3b82f6; }
+    li.done { border-left: 10px solid #10b981; }
 
     .btn-group { display: flex; gap: 5px; align-items: center; }
+
+.edit { background: #f59e0b; }
+.edit:hover { background: #d97706; }
+
+select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+}

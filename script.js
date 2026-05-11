@@ -42,11 +42,6 @@ function render() {
         let listBaru = document.createElement("li");
         listBaru.classList.add(item.status);
 
-        if (index % 2 === 0) {
-            listBaru.style.color = "red";
-        } else {
-            listBaru.style.color = "green";
-        }
             listBaru.innerHTML = `
         <div>
         <strong>${item.teksTugas}</strong> <br>
