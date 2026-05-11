@@ -47,3 +47,4 @@
     }
 
     li.todo { border-left: 6px solid #f59e0b; }
+    li.on-progress { border-left: 6px solid #3b82f6; }
