@@ -40,9 +40,8 @@ function render() {
 
     tasks.forEach(function(item, index) {
         let listBaru = document.createElement("li");
-        listBaru.classList.add(item.status); // Tambah warna berdasarkan status
+        listBaru.classList.add(item.status);
 
-        // Logika warna teks selang-seling (Request Dosenmu)
         if (index % 2 === 0) {
             listBaru.style.color = "red";
         } else {
