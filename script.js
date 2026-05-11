@@ -27,7 +27,7 @@ btnTambah.addEventListener("click", function(){
         tasks[editIndeks].date = tglTugas;
         editIndeks = -1;
         btnTambah.innerText = "Tambah Tugas";
-        btnTambah.style.background = "#4135ea";
+        btnTambah.style.background = "#0077b6";
     }
     inputTugas.value = "";
     inputTanggal.value = "";
