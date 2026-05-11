@@ -45,3 +45,5 @@
     .hapus:hover {
         background: #dc2626;
     }
+
+    li.todo { border-left: 6px solid #f59e0b; }
