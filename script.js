@@ -1,5 +1,5 @@
 let tasks=[];
-let editIndeks= -1; 
+let editIndeks = -1;
 
 const inputTugas = document.getElementById("inputTugas");
 const btnTambah = document.getElementById("btnTambah");
