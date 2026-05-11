@@ -18,8 +18,8 @@ btnTambah.addEventListener("click", function(){
 
     if(editIndeks === -1){
         tasks.push({
-            teksTugas: teksTugas
-            tglTugas: tglTugas
+            teksTugas: teksTugas,
+            tglTugas: tglTugas,
             status: 'todo'
         });
     }else{
