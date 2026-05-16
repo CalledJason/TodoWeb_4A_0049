@@ -23,8 +23,8 @@ btnTambah.addEventListener("click", function(){
             status: 'todo'
         });
     }else{
-        tasks[editIndeks].name = teksTugas;
-        tasks[editIndeks].date = tglTugas;
+        tasks[editIndeks].teksTugas = teksTugas;
+        tasks[editIndeks].tglTugas = tglTugas;
         editIndeks = -1;
         btnTambah.innerText = "Tambah Tugas";
         btnTambah.style.background = "#0077b6";
@@ -59,7 +59,7 @@ function render() {
     `;
 
     daftarTugas.appendChild(listBaru);
- });
+});
 }
 
 function persiapanEdit(index) {
@@ -68,7 +68,7 @@ function persiapanEdit(index) {
     
     editIndeks = index; 
     btnTambah.innerText = "Simpan"; 
-    btnTambah.style.background = "#f59e0b";
+    btnTambah.style.background = "#fbc02d";
     inputTugas.focus();
 }
 
